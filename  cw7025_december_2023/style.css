@@ -1,0 +1,69 @@
+﻿.parentDiv {
+    position: relative;
+}
+
+.grid {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    background-image: url(./images/space.png);
+}
+
+.game-container {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+    opacity: 0;
+    display: flex;
+    z-index: 2;
+    gap:5%;
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+    z-index:3;
+}
+
+.invader {
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/enemy1.png);
+}
+
+.shooter {
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/player.png);
+    position: absolute;
+    z-index:3;
+}
+
+.laser {
+    width:40px;
+    height:40px;
+    background-image: url(./images/bullet.png);
+    z-index: 5;
+}
+
+.invadershooter {
+    background-color: ghostwhite;
+}
+
+.invaderlaser {
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/inbullet.png);
+    z-index: 3;
+}
+.title{
+    font-family: Orbitron;
+}
+.score,.lives{
+    font-family: Orbitron;
+}
